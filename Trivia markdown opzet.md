@@ -12,7 +12,7 @@ Het doel van de trivia is op een leuke en competitieve manier kennis bij te bren
 
 ----
 ## Schetsen
-De schetsen zijn in bijlagen 'trivia start', 'trivia home' en 'trivia sign-up' bijgevoegd.
+De schetsen zijn in bijlagen 'trivia start', 'trivia home', 'trivia sign-up', 'trivia statistics en 'trivia questions' bijgevoegd.
 
 ## Features
  - Onze trivia beschikt minimaal over twee homepages (voor niet ingelogde gebruiker en ingelogde gebruiker), inlogpagina, leaderboard en de trivia pagina zelf. 
