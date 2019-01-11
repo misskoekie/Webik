@@ -14,6 +14,35 @@ Het doel van de trivia is op een leuke en competitieve manier kennis bij te bren
 ## Schetsen
 De schetsen zijn in bijlagen 'trivia start', 'trivia home', 'trivia sign-up', 'trivia statistics en 'trivia questions' bijgevoegd.
 
+## Schets 1: Trivia startpagina
+Op deze pagina zal de speler eerst terecht komen. De mogelijkheden om in te loggen en aan te melden zijn aanwezig. 
+
+![](https://github.com/misskoekie/Webik/blob/master/Images/Schermafbeelding%202019-01-11%20om%2011.07.49.png)
+
+
+## Schets 2: Sign up
+De mogelijkheid voor een speler om zich te registreren voor trivia.
+
+![](https://github.com/misskoekie/Webik/blob/master/Images/Schermafbeelding%202019-01-08%20om%2012.28.38.png)
+
+
+## Schets 3: Homepage
+Als een speler is ingelogd, komt hij op deze pagina. De mogelijkheden om zijn statistieken te bekijken en een spel te starten zijn aanwezig.
+
+
+![](https://github.com/misskoekie/Webik/blob/master/Images/Schermafbeelding%202019-01-11%20om%2011.08.57.png)
+
+## Schets 4: Vragen
+De manier waarop de vragen gepresenteerd worden met de daarbij behorende antwoordopties. 
+
+
+![](https://github.com/misskoekie/Webik/blob/master/Images/Schermafbeelding%202019-01-11%20om%2011.09.10.png)
+
+## Schets 5: Statistieken
+De speler kan zijn vorderingen zien. Dat wil zeggen dat hij per categorie kan zien hoeveel procent hij goed heeft.
+
+![](https://github.com/misskoekie/Webik/blob/master/Images/Schermafbeelding%202019-01-11%20om%2011.09.21.png)
+
 ## Features
  - Onze trivia beschikt minimaal over twee homepages (voor niet ingelogde gebruiker en ingelogde gebruiker), inlogpagina, leaderboard en de trivia pagina zelf. 
  - Er wordt gebruik gemaakt van local multiplayer. Het multiplayer element is turn-based: Op één platform zullen twee spelers achtereenvolgens vragen beantwoorden. 
