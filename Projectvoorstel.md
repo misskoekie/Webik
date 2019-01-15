@@ -25,36 +25,47 @@ Wanneer een speler is ingelogd en local multiplayer speelt, zal de tussenstand o
 
 ----
 ## Schetsen
-De schetsen zijn in bijlagen 'trivia start', 'trivia home', 'trivia sign-up', 'trivia statistics en 'trivia questions' bijgevoegd.
 
-## Schets 1: Trivia startpagina
-Op deze pagina zal de speler eerst terecht komen. De mogelijkheden om in te loggen en aan te melden zijn aanwezig. 
+## Schets 1: Homepagina
+In de bovenstaande schets verwijzen in de nav-bar Speel, Scorelijst, Regels en Login naar de respectievelijke pagina. Ook in de onderste balk verwijst facebook naar de facebookpagina van onze trivia. Dit is elke keer zo bij elke pagina.
 
-![](https://github.com/misskoekie/Webik/blob/master/Images/Schermafbeelding%202019-01-11%20om%2011.07.49.png)
-
-
-## Schets 2: Sign up
-De mogelijkheid voor een speler om zich te registreren voor trivia.
-
-![](https://github.com/misskoekie/Webik/blob/master/Images/Schermafbeelding%202019-01-08%20om%2012.28.38.png)
+![](https://github.com/misskoekie/Webik/blob/master/Def_images/Schermafbeelding%202019-01-15%20om%2010.48.35.png)
 
 
-## Schets 3: Homepage
-Als een speler is ingelogd, komt hij op deze pagina. De mogelijkheden om zijn statistieken te bekijken en een spel te starten zijn aanwezig.
+## Schets 2: Login pagina
+In de bovenstaande schets verwijst ‘log in’ naar de inlogpagina en ‘registreer’ verwijst naar de registratiepagina.
+
+![](https://github.com/misskoekie/Webik/blob/master/Def_images/Schermafbeelding%202019-01-15%20om%2010.48.56.png)
 
 
-![](https://github.com/misskoekie/Webik/blob/master/Images/Schermafbeelding%202019-01-11%20om%2011.08.57.png)
+## Schets 3: Registreer pagina
+In de bovenstaande schets wordt er als er op ‘registreer’ wordt gedrukt geregistreerd en ingelogd en ‘Log in’ in verwijst naar de log in pagina.
 
-## Schets 4: Vragen
-De manier waarop de vragen gepresenteerd worden met de daarbij behorende antwoordopties. 
+![](https://github.com/misskoekie/Webik/blob/master/Def_images/Schermafbeelding%202019-01-15%20om%2010.49.06.png)
 
 
-![](https://github.com/misskoekie/Webik/blob/master/Images/Schermafbeelding%202019-01-11%20om%2011.09.10.png)
+## Schets 4: Speelpagina
+Hier kan er gekozen worden tussen local of online. Bij local wordt het spel gestart waarbij twee mensen op 1 computer spelen en bij online wordt het spel gestart waarbij je in je eentje speelt, en vervolgens je score in een lijst zet. Alle scores van alle spelers op elke computer worden hier laten zien.
 
-## Schets 5: Statistieken
-De speler kan zijn vorderingen zien. Dat wil zeggen dat hij per categorie kan zien hoeveel procent hij goed heeft.
+![](https://github.com/misskoekie/Webik/blob/master/Def_images/Schermafbeelding%202019-01-15%20om%2012.32.34.png)
 
-![](https://github.com/misskoekie/Webik/blob/master/Images/Schermafbeelding%202019-01-11%20om%2011.09.21.png)
+## Schets 5: Local game
+Hier wordt er bij het klikken op een van de antwoorden naar de volgende vraag gegaan. Eerst beantwoord speler 1 een vraag en vervolgens speler 2. 
+
+![](https://github.com/misskoekie/Webik/blob/master/Def_images/Schermafbeelding%202019-01-15%20om%2012.32.45.png)
+
+
+## Schets 6: Multiplayer game
+Hier speel je in je eentje en wordt je score vervolgens toegevoegd aan de scorelijst. Ook hierbij wordt er bij het klikken op een van de antwoorden naar de volgende vraag gegaan.
+
+![](https://github.com/misskoekie/Webik/blob/master/Def_images/Schermafbeelding%202019-01-15%20om%2012.35.01.png)
+
+
+## Schets 7: Scorepagina
+Hier worden alle scores genoemd van hoog naar laag. Je inlognaam wordt gekoppeld aan je score
+
+![](https://github.com/misskoekie/Webik/blob/master/Def_images/Schermafbeelding%202019-01-15%20om%2012.35.20.png)
+
 
 ## Features
  - Onze trivia beschikt minimaal over twee homepages (voor niet ingelogde gebruiker en ingelogde gebruiker), inlogpagina, leaderboard en de trivia pagina zelf. 
