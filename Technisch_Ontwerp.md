@@ -83,12 +83,12 @@ Hier worden alle scores genoemd van hoog naar laag. Je inlognaam wordt gekoppeld
 
 ----
 ## Models/Helpers
--__**Layout**__: Algemene layout die wordt aangehouden op de gehele site. Kleine dingen zullen getweaked worden afhankelijk van de pagina. Layout van schetsen in “Views” zullen worden gebruikt als layout. 
--__**Functie: Apology**__. Deze functie treed op wanneer een gebruiker iets doet wat niet kan. Bijvoorbeeld inloggen zonder dat hij zichzelf geregistreerd heeft. 
--__**Functie: Login_required**__. Deze functie treed op wanneer een niet ingelogde gebruiker naar een pagina gaat waar hij eigenlijk ingelogd voor moet zijn. 
+- **Layout**: Algemene layout die wordt aangehouden op de gehele site. Kleine dingen zullen getweaked worden afhankelijk van de pagina. Layout van schetsen in “Views” zullen worden gebruikt als layout. 
+- **Functie: Apology**. Deze functie treed op wanneer een gebruiker iets doet wat niet kan. Bijvoorbeeld inloggen zonder dat hij zichzelf geregistreerd heeft. 
+- **Functie: Login_required**. Deze functie treed op wanneer een niet ingelogde gebruiker naar een pagina gaat waar hij eigenlijk ingelogd voor moet zijn. 
 Het bestand met deze functies zal helpers genoemd worden. 
--__**Functie: Score**__. Deze functie berekend de behaalde score en verzend deze naar de database. Dit is een hulpfunctie omdat we 3 maal een soortgelijke functie moeten gebruiken voor het updaten van de score van algemeen, local en multiplayer.
--__**Functie: Retrieve_questions**__. Deze functie wordt aangeroepen als de vraag van een API moet worden opgehaald door middel van een GET-request. Deze functie zal per gestelde vraag aangeroepen worden. 
+- **Functie: Score**. Deze functie berekend de behaalde score en verzend deze naar de database. Dit is een hulpfunctie omdat we 3 maal een soortgelijke functie moeten gebruiken voor het updaten van de score van algemeen, local en multiplayer.
+- **Functie: Retrieve_questions**. Deze functie wordt aangeroepen als de vraag van een API moet worden opgehaald door middel van een GET-request. Deze functie zal per gestelde vraag aangeroepen worden. 
 
 ----
 ## Geavanceerde architectuur
@@ -97,11 +97,11 @@ Dit komt omdat de opbouw van de opdracht van Finance wat bekender is.
 Door met de opbouw van Finance te werken geeft dat een beter gevoel in plaats van een nieuwe methode die eventueel gebruikt kan worden. 
 
 ## Plugins en frameworks
-__**Flask**__
-- http://flask.pocoo.org 
-- https://github.com/pallets/flask 
-__**Jinja**__
-- http://jinja.pocoo.org/docs/2.10/ 
-__**Bootstrap**__
-- https://getbootstrap.com 
+- **Flask**
+  - http://flask.pocoo.org 
+  - https://github.com/pallets/flask 
+- **Jinja**
+  - http://jinja.pocoo.org/docs/2.10/ 
+- **Bootstrap**
+  - https://getbootstrap.com 
 
