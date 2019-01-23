@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Account
+{% endblock %}
+
+
+{% block main %}
+    <form action="{{ url_for('account') }}" method="post">
+        <p>
+            <h3><center>U heet {{gebruikersnaam}}</center></h3>
+        </p>
+        <p>
+            <h4><center>Bekijk hier uw scores</center></h4>
+        </p>
+    <table class="table table-striped" style="width:100%">
+        <tr>
+            <th>Score</th>
+        </tr>
+        {% for i in scores %}
+        <div class="list-group">
+            <tr>
+                <td>{{ i.score }}</td>
+            </tr>
+        </div>
+        {% endfor %}
+    </form>
+
+{% endblock %}

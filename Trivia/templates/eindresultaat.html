@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Eindresultaten
+{% endblock %}
+
+
+{% block main %}
+
+<table>
+  <TR>
+     <TD><h2>Correct answer</h2></TD>
+     <TD><h2>Your answer</h2></TD>
+     <TD><h2>Correct</h2></TD>
+     <h1>Your score: {{ Score }}</h1>
+  </TR>
+{% for x in range(10) %}
+
+<TR>
+   <TD>{{Answers['ca'+x|string]}}</TD>
+   <TD>{{Answers['a'+x|string]}}</TD>
+   <TD>{{Answers['ca'+x|string]==Answers['a'+x|string]}}</TD>
+</TR>
+{% endfor %}
+</table>
+
+
+
+
+{% endblock %}

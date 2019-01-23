@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Eindresultaat
+{% endblock %}
+
+
+{% block main %}
+
+<form name = 'answers' action="" method="post">
+  {%  for x in range(questions|length ) %}
+
+  <div class="card" style="width: 23rem;" id='QuestionCard'>
+      <div class="card-body">
+      <h5 class="card-title">{{questions[x]["category"]}}</h5>
+      <p class="card-text"> {{questions[x]["question"]}}</p>
+    </div>
+
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><input type="radio" name={{"answer"+x|string}} value="{{questions[x]['random_answers'][0]}}"> A <text>{{questions[x]["random_answers"][0]}}</text></li>
+      <li class="list-group-item"><input type="radio" name={{"answer"+x|string}} value="{{questions[x]['random_answers'][1]}}"> B <text>{{questions[x]["random_answers"][1]}}</text></li>
+      <li class="list-group-item"><input type="radio" name={{"answer"+x|string}} value="{{questions[x]['random_answers'][2]}}"> C <text>{{questions[x]["random_answers"][2]}}</text></li>
+      <li class="list-group-item"><input type="radio" name={{"answer"+x|string}} value="{{questions[x]['random_answers'][3]}}"> D <text>{{questions[x]["random_answers"][3]}}</text></li>
+
+    </ul>
+</div>
+ {% endfor %}
+
+    <center><button type="button" class="btn btn-default">To Results</button></center>
+
+ </form>
+
+<script>
+
+  $("button").click(function(){
+
+
+  $.ajax({
+    type : 'POST',
+    url : "{{url_for('api')}}",
+    data: JSON.stringify({
+    "ca0": "{{questions[0]['correct_answer']}}",
+    "ca1": "{{questions[1]['correct_answer']}}",
+    "ca2": "{{questions[2]['correct_answer']}}",
+    "ca3": "{{questions[3]['correct_answer']}}",
+    "ca4": "{{questions[4]['correct_answer']}}",
+    "ca5": "{{questions[5]['correct_answer']}}",
+    "ca6": "{{questions[6]['correct_answer']}}",
+    "ca7": "{{questions[7]['correct_answer']}}",
+    "ca8": "{{questions[8]['correct_answer']}}",
+    "ca9": "{{questions[9]['correct_answer']}}",
+    "a0" : $('input[name="answer0"]:checked').val(),
+    "a1" : $('input[name="answer1"]:checked').val(),
+    "a2" : $('input[name="answer2"]:checked').val(),
+    "a3" : $('input[name="answer3"]:checked').val(),
+    "a4" : $('input[name="answer4"]:checked').val(),
+    "a5" : $('input[name="answer5"]:checked').val(),
+    "a6" : $('input[name="answer6"]:checked').val(),
+    "a7" : $('input[name="answer7"]:checked').val(),
+    "a8" : $('input[name="answer8"]:checked').val(),
+    "a9" : $('input[name="answer9"]:checked').val(),
+  }, null, '\t'),
+    contentType: 'application/json;charset=UTF-8',
+    success:function(response){ document.write(response); }
+      });
+   });
+</script>
+
+  {% endblock %}

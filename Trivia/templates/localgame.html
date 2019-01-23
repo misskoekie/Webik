@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    localgame
+{% endblock %}
+
+
+{% block main %}
+
+      <div class = "localgame" ><h1>Local game</h1></div>
+      <div class = "vraag" > <h1>Vraag <b>1</b> voor speler <b>1</b></h1></div>
+
+      <div class="card" style="width: 30rem;" id='QuestionCard'>
+        <div class="card-body">
+        <h5 class="card-title">Entertainment</h5>
+        <p class="card-text">Vraag 1</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><a href="#" class="card-link">A <text>Antwoord A</text></a></li>
+        <li class="list-group-item"><a href="#" class="card-link">B <text>Antwoord B</text></a></li>
+        <li class="list-group-item"><a href="#" class="card-link">C <text>Antwoord C</text></a></li>
+        <li class="list-group-item"><a href="#" class="card-link">D <text>Antwoord D</text></a></li>
+      </ul>
+
+  </div>
+
+
+{% endblock %}
