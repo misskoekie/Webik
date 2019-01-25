@@ -8,22 +8,26 @@
 {% block main %}
     <form action="{{ url_for('account') }}" method="post">
         <p>
-            <h3><center>U heet {{gebruikersnaam}}</center></h3>
+            <h3><center>Online Leaderboard</center></h3>
         </p>
         <p>
-            <h4><center>Bekijk hier uw scores</center></h4>
+            <h4><center>Bekijk hier de scores van spelers over de hele wereld!</center></h4>
         </p>
-    <table class="table table-striped" style="width:100%">
-        <tr>
-            <th>Score</th>
-        </tr>
-        {% for i in scores %}
-        <div class="list-group">
+    <table class="table">
+        <thead>
             <tr>
-                <td>{{ i.score }}</td>
+                <th>Username</th>
+                <th>Score</th>
+                <th>Date</th>
             </tr>
-        </div>
+        </thead>
+        {% for i in scoreOnline %}
+        <tbody></tbody>
+            <tr>
+                <td>{{ i.username }}</td>
+                <td>{{ i.score }}</td>
+                <td>{{ i.timestamp }}</td>
+            </tr>
         {% endfor %}
-    </form>
-
+    </table>
 {% endblock %}

@@ -49,7 +49,7 @@ def spelregels():
 
 @app.route("/scoreOnline")
 def scoreOnline():
-    scoreOnline = db.execute("SELECT username, score FROM scores ORDER BY score DESC")
+    scoreOnline = db.execute("SELECT username, score, timestamp FROM scores ORDER BY score DESC")
     return render_template("scoreOnline.html", scoreOnline=scoreOnline)
 
 @app.route("/speelpagina")
@@ -60,12 +60,13 @@ def speelpagina():
 
 @app.route("/account")
 def account():
-    lijst = db.execute("SELECT username, score FROM scores WHERE id = :id ORDER BY score DESC", id = session["user_id"])
+    lijst = db.execute("SELECT username, score, timestamp FROM scores WHERE id = :id ORDER BY score DESC", id = session["user_id"])
     scores = []
     for symbolDict in lijst:
         gebruikersnaam = symbolDict["username"]
         rowDict = {}
         rowDict["score"]=symbolDict["score"]
+        rowDict["timestamp"]=symbolDict["timestamp"]
         scores.append(rowDict)
 
     return render_template("account.html", gebruikersnaam = gebruikersnaam, scores = scores)
@@ -143,7 +144,7 @@ def register():
 
         result = db.execute("INSERT INTO users (username, hash) VALUES(:username, :hashpassword)",
                                 username=request.form.get("username"),
-                            hashpassword=password)
+                                hashpassword=password)
 
         if not result:
             return apology("The username is already taken")

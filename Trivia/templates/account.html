@@ -6,19 +6,21 @@
 
 
 {% block main %}
-    <form action="{{ url_for('account') }}" method="post">
-        <p>
-            <h3><center>U heet {{gebruikersnaam}}</center></h3>
-        </p>
-        <p>
-            <h4><center>Bekijk hier uw scores</center></h4>
-        </p>
-        <p>
-            Scores:
-        </p>
-        <p>
-            <h4>{{score}}</h4>
-        </p>
-    </form>
-
+<form action="{{ url_for('account') }}" method="post">
+    <h3><center>U heet {{gebruikersnaam}}</center></h3>
+    <h4><center>Bekijk hier uw scores</center></h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Score</th>
+                <th>Datum</th>
+            </tr>
+        {% for i in scores %}
+        <tbody>
+            <tr>
+                <td>{{ i.score }}</td>
+                <td>{{ i.timestamp }}</td>
+            </tr>
+        {% endfor %}
+</form>
 {% endblock %}
